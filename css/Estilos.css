@@ -1,0 +1,254 @@
+body{
+  font-family: 'Source Sans pro', sans-serif;
+  background-color: #fafafa;
+  margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,{
+  font-family: 'Fjalla One', sans-Serif; /*define el tipo de fuente aplicado al texto.*/
+  font-weight: normal;/*define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.*/
+  font-style: italic;
+}
+
+h1{
+  margin: 10px;
+  font-size: 40px;/*tamaño del texto*/
+  line-height: 1.5;/*define la altura desde la base del texto hasta la base de la siguiente línea de texto.*/
+  letter-spacing: -0.2px;/*define el espaciado entre las letras del texto.*/
+  color: white;
+  width: 500px;
+   height: 300px;
+  /*text-transform: uppercase;/*permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+  text-decoration: none;define el decorado del texto como subrayado, tachado, con subrayado superior, etc. */
+}
+
+h2{
+  text-transform: uppercase;
+  color: #8561C5;
+  font-family: 'Sourse Sans Pro',sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+
+h1 strong{
+  color: #267063;
+}
+
+.Main__Section{
+  height: 300px;
+  /* background-image: url('https://i.imgur.com/NBYlHUf.jpg'); contiene la url que se usará como fondo del elemento. */
+  background-color: black;  /* indica el color de fondo, se puede usar en combinación con la imagen. */
+  /* background-size: 500px 300px; se puede indicar en valores de alto y ancho o en alguna de las palabras claves permitidas: cover o contain. */
+  /* background-repeat: no-repeat; indica la posición de la imagen dentro del elemento, puede indicarse en unidades o en palabras claves como center, left, top y right. */
+  /* background-position-x: right; indica el método de repetición de la imagen de fondo, puede ser: repeat, repeat-x, repeat-y o no-repeat. */
+  text-decoration: none; 
+  display: flex;
+  align-items: center;
+}
+
+.Main__Section.image{
+  object-fit: cover;
+}
+
+.Briefcase{
+  margin: 20px 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.Briefcase .Container{
+  border: 1px solid gray; 
+  border-radius: 10px;
+  border-top-left-radius: 20px;
+
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.article__Briefcase{
+  font-family: 'Source Sans Pro',sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Briefcase__details{
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+}
+
+.Briefcase__ImageContainer{
+  width: 500px;
+}
+
+.Cabecera{
+  background-color: #8561C5;
+  color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.menu{
+  height: inherit;
+}
+
+.Cabecera .menu ol{
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.cabecera .menu ol,li{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  height: inherit;
+}
+
+.cabecera .menu ol,li a{
+  height: inherit;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding: 0 10px;
+}
+
+figure{
+  margin: 0px;
+}
+
+.Briefcase__Cont{
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background:#f4fbff;
+}
+
+.Event__Detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  border: 2px outset slateblue;
+}
+
+.Event__Cont figure img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Event__Description{
+  text-align: left;
+}
+.Event__btn{
+  border: 1px solid #056fff;
+  padding: 5px 2px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.Trabajemos{
+  background-color: #056fff;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.Social__Link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  fill: white; /*llena de color blanco los iconos de la redes sociales*/
+  margin: 0 10px;
+}
+
+.Social__Link.Facebook{
+  background-image: url('../image/facebook.svg');
+  background-size: 50px 50px;}
+
+.Social__Link.Instagram{
+  background-image: url('../image/instagram.svg');
+  fill: white;
+}
+
+.Social__Link.Twitter{
+  background-image: url('../image/twitter.svg');
+  fill: white;
+}
+
+.Social__Link.GitHub{
+  background-image: url('../image/github.svg');
+  fill: white;
+}
+
+.Trabajemos form{
+  font-size: 24px;
+}
+
+.Trabajemos__email input{
+  border-color: grey;
+  border-style: solid;
+  border-radius:5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../image/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.Trabajemos__email button{
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+.footer{
+  background-color: #1D252C;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: antiquewhite;
+}
+
+.footer img{
+  vertical-align: middle;
+  height: 30px;
+}
+
+.footer a{
+  color: #ffffff;
+}
+
+.Container{
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  justify-content: space-between;
+}
