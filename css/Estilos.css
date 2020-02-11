@@ -120,7 +120,7 @@ h2 {
 .project-course,
 .project-date,
 .project-url {
-  margin: 10px 0;
+  margin: .4em 0;
 }
 .project-description {
   font-size: 20px;
@@ -140,11 +140,15 @@ h2 {
 
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
 .project-imageContainer {
-  width: 500px;
+  width: 50%;;
+}
+
+.project-imageContainer img{
+  max-width: 100%;
 }
 
 .header {
@@ -338,9 +342,6 @@ figure {
 
 /* desktop first que empieces desde el MQ más grande */
 
-@media screen and (max-width: 1024px) {
-
-}
 
 @media screen and (max-width: 767px) {
   .header {
@@ -359,10 +360,40 @@ figure {
   .header .logo {
     text-align: center;
   }
+
+  .project{
+    display: block;
+  }
+
+  .project-imageContainer{
+    width: auto;
+    text-align: center;
+  }
+  .project-details{
+    width: auto;
+    /* font-size: 16px; */
+  }
+  .project-title{
+    font-size: 1.5em;
+  }
+  .project-url{
+    font-size: 1em;
+  }
+  .project-course{
+    font-size: 1.2em;
+  }
+  .project-date{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  .project-details{
+    font-size: 12px;
+  }
 }
 
 
