@@ -1,223 +1,311 @@
-body{
-  font-family: 'Source Sans pro', sans-serif;
-  background-color: #fafafa;
-  margin: 0px;
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+
+/* seletor de etiqueta  header - section - article - nav */
+/* header {
+  background: pink;
+  color: red
+} */
+
+/* selector descendente  */
+/* body header div nav ol li a  */
+
+/* selector de clase . */
+
+/* .link */
+
+/* selector de id # */
+/* #portafolio */
+
+
+
+/* gris oscuro = #1d252c */
+/* gris claro = #626262 */
+/* background gris = #1b2127 */
+/* celeste = #026fff */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,{
-  font-family: 'Fjalla One', sans-Serif; /*define el tipo de fuente aplicado al texto.*/
-  font-weight: normal;/*define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.*/
-  font-style: italic;
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  /* font-style: italic; */
 }
 
-h1{
-  margin: 10px;
-  font-size: 40px;/*tamaño del texto*/
-  line-height: 1.5;/*define la altura desde la base del texto hasta la base de la siguiente línea de texto.*/
-  letter-spacing: -0.2px;/*define el espaciado entre las letras del texto.*/
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
   color: white;
-  width: 500px;
-   height: 300px;
-  /*text-transform: uppercase;/*permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
-  text-decoration: none;define el decorado del texto como subrayado, tachado, con subrayado superior, etc. */
+  margin: 0;
+  /* margin: 100px 150px 70px 30px; */
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
 }
-
-h2{
+h1 strong {
+  color: #026fff;
+}
+h2 {
+  color: #026fff;
   text-transform: uppercase;
-  color: #8561C5;
-  font-family: 'Sourse Sans Pro',sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
-  margin-left: 10px;
 }
 
-
-h1 strong{
-  color: #267063;
-}
-
-.Main__Section{
+.hero {
   height: 300px;
-  /* background-image: url('https://i.imgur.com/NBYlHUf.jpg'); contiene la url que se usará como fondo del elemento. */
-  background-color: black;  /* indica el color de fondo, se puede usar en combinación con la imagen. */
-  /* background-size: 500px 300px; se puede indicar en valores de alto y ancho o en alguna de las palabras claves permitidas: cover o contain. */
-  /* background-repeat: no-repeat; indica la posición de la imagen dentro del elemento, puede indicarse en unidades o en palabras claves como center, left, top y right. */
-  /* background-position-x: right; indica el método de repetición de la imagen de fondo, puede ser: repeat, repeat-x, repeat-y o no-repeat. */
-  text-decoration: none; 
+  /* background-image: url('../images/hero.jpg'); */
+  background-color: #1b2127;
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
 }
 
-.Main__Section.image{
+.hero-image{
   object-fit: cover;
 }
 
-.Briefcase{
-  margin: 20px 10px;
+
+.portfolio {
+  background: #fafafa;
   padding: 20px;
-  background-color: #ffffff;
-  box-sizing: border-box;
+  /* background: red; */
 }
 
-.Briefcase .Container{
-  border: 1px solid gray; 
+.project {
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* color: blue; */
+  /* border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; */
+  border: 1px solid gray;
   border-radius: 10px;
-  border-top-left-radius: 20px;
-
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  /* margin-right
+  margin-left 
+  margin-top */
   padding: 20px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-}
-
-.article__Briefcase{
-  font-family: 'Source Sans Pro',sans-serif;
+  background: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+/* .project-date {
+  margin: 10px 0;
+} */
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.Briefcase__details{
+
+.project-details {
   width: 500px;
-  height: 200px;
-  display: inline-block;
 }
 
-.Briefcase__ImageContainer{
+.project-imageContainer {
   width: 500px;
 }
 
-.Cabecera{
-  background-color: #8561C5;
+.header {
+  background-color: #1b2127;
   color: white;
   display: flex;
   height: 70px;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
 }
 
-.menu{
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
   height: inherit;
 }
-
-.Cabecera .menu ol{
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+.header a {
   display: flex;
   align-items: center;
   height: inherit;
-}
-
-.cabecera .menu ol,li{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  height: inherit;
-}
-
-.cabecera .menu ol,li a{
-  height: inherit;
-  color: white;
-  text-decoration: none;
-  align-items: center;
   padding: 0 10px;
 }
 
-figure{
-  margin: 0px;
+.flexbox {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
 }
 
-.Briefcase__Cont{
-  border: 1px solid black;
-  margin-top: 10px;
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+
+  flex-shrink: 0;
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-list-title {
+  margin-left: 20px;
+}
+.event { 
+  margin: 10px;
   width: 480px;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background:#f4fbff;
+  background: #f4fbff;
 }
-
-.Event__Detail{
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail {
   margin: 20px 40px;
   margin-top: -40px;
   background-color: white;
   position: relative;
   padding: 20px;
   text-align: center;
-  border: 2px outset slateblue;
 }
-
-.Event__Cont figure img{
-  width: 480px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.Event__Description{
+.event-description {
   text-align: left;
 }
-.Event__btn{
-  border: 1px solid #056fff;
-  padding: 5px 2px;
+
+.event-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
   text-decoration: none;
   border-radius: 5px;
 }
 
-.Trabajemos{
+.contact {
   background-color: #056fff;
   color: white;
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.social {
+}
 
-
-.Social__Link{
+.social-link {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-size: 50px 50px;
-  fill: white; /*llena de color blanco los iconos de la redes sociales*/
   margin: 0 10px;
+  background-size: 50px 50px;
 }
 
-.Social__Link.Facebook{
-  background-image: url('../image/facebook.svg');
-  background-size: 50px 50px;}
-
-.Social__Link.Instagram{
-  background-image: url('../image/instagram.svg');
-  fill: white;
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+.social-link.facebook {
+  background-image: url('../images/facebook.svg');
+}
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
 }
 
-.Social__Link.Twitter{
-  background-image: url('../image/twitter.svg');
-  fill: white;
-}
 
-.Social__Link.GitHub{
-  background-image: url('../image/github.svg');
-  fill: white;
-}
-
-.Trabajemos form{
-  font-size: 24px;
-}
-
-.Trabajemos__email input{
-  border-color: grey;
+.form-email input {
+  border-color: gray;
   border-style: solid;
-  border-radius:5px;
+  border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url('../image/envelope.svg');
+  background-image: url('../images/envelope.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 5px;
 }
 
-.Trabajemos__email button{
+.form-email button {
   display: block;
   background: transparent;
   color: white;
@@ -226,29 +314,18 @@ figure{
   width: 100px;
   margin-top: 10px;
 }
-.footer{
-  background-color: #1D252C;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: antiquewhite;
+
+.form-email h3 { 
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.footer img{
-  vertical-align: middle;
-  height: 30px;
-}
-
-.footer a{
-  color: #ffffff;
-}
-
-.Container{
+.container {
+  /* border: 1px solid red; */
   width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
-  justify-content: space-between;
+  flex-wrap: inherit;
 }
