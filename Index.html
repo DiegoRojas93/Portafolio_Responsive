@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -150,5 +150,26 @@
         </div>
       </div>
     </footer>
+    <script>
+      console.log('Hola mundo');
+      console.log(document.querySelector('.menu'));
+
+      const menu = document.querySelector('.menu'); //Obtienes la clase de la etiqueta 
+      console.log(menu); //lo muestra en la consola
+      const burgerbutton=document.querySelector('#burger-menu');//Obtienes la id de la etiqueta 
+      console.log(burgerbutton); //lo muestra en la consola
+
+      burgerbutton.addEventListener('click', hideShow) // lee el evento de un click y ejecuta la funcion hideShow
+
+      function hideShow(){ //Ejecuta la funcion 
+
+        if (menu.classList.contains('is-active')){//si el menu ya esta desplegado ó si el menu 
+          menu.classList.remove('is-active'); //no muestra el menu
+        }
+        else{
+          menu.classList.add('is-active'); //muestra el menu
+         }
+      }
+    </script>
   </body>
 </html>
